@@ -50,7 +50,7 @@ choice = st.sidebar.selectbox("Select Option", menu)
 # ================== HOME PAGE ==================
 if choice == "🏠 Home":
     st.write("""
-    ### 👋 Welcome to the Integrated Hospital Management System  
+    ### 👋 Welcome to Hospital Management System
     This platform allows you to:
     - 🧍 Register patients  
     - 👨‍⚕️ Add doctors and staff  
@@ -127,4 +127,5 @@ else:
         st.dataframe(df, hide_index=True)
 
 conn.close()
+
 
