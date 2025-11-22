@@ -17,8 +17,8 @@ conn = get_connection()
 cursor = conn.cursor(dictionary=True)
 
 # ================== PAGE SETTINGS ==================
-st.set_page_config(page_title="Integrated Patient Care Management Platform", page_icon="🏥", layout="wide")
-st.title("🏥 Integrated Patient Care Management Platform")
+st.set_page_config(page_title="Hospital Management System", page_icon="🏥", layout="wide")
+st.title("🏥Hospital Management System")
 
 # ================== FETCH TABLES ==================
 cursor.execute("SHOW TABLES;")
@@ -127,3 +127,4 @@ else:
         st.dataframe(df, hide_index=True)
 
 conn.close()
+
